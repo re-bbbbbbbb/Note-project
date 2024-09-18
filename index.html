@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Local storage</title>
+    <script src="./script.js"></script>
+</head>
+<body onload="init()" style="background-color: black; color: white;">
+    <form>
+        <h1>Titolo:</h1> <input type="text" id="titolo" style="height: 30px; border-radius: 2mm; border-width: 2px;"/></br>
+        <h1>Testo:</h1> <textarea id="testo" rows="7" cols="70" style="border-radius: 2mm; border-width: 2px;"></textarea></br> </br>
+        <input type="button" value="Salva Nota" onclick="SalvaNota()" style="color: black; background-color:white; height: 45px; width: 125px; font-size: 15px; border-color: white; border-radius: 2mm; border-width: 2px;"/>
+        <input type="button" value="Elimina Note" onclick="EliminaNote()" style="color: black; background-color:white; height: 45px; width: 125px; font-size: 15px; border-color: white; border-radius: 2mm; border-width: 2px;"/>
+       
+        <select id="colore" style="color: black; background-color:white; height: 45px; width: 125px; font-size: 15px; border-color: white; border-radius: 2mm; border-width: 2px;">
+            <option value="" disabled selected>Colore testo</option>
+            <option value="red">Rosso</option>
+            <option value="orange">Arancione</option>
+            <option value="yellow">Giallo</option>
+            <option value="green">Verde</option>
+            <option value="cyan">Verde acqua</option>
+            <option value="blue">Blu</option>
+            <option value="purple">Viola</option>
+            <option value="violet">Rosa</option>
+            <option value="black">Nero</option>
+            <option value="gray">Grigio</option>
+            <option value="white">Bianco</option>
+        </select>
+
+        <select id="sfondo" style="color: black; background-color:white; height: 45px; width: 125px; font-size: 15px; border-color: white; border-radius: 2mm; border-width: 2px;">
+            <option value="" disabled selected>Colore sfondo</option>
+            <option value="red">Rosso</option>
+            <option value="orange">Arancione</option>
+            <option value="yellow">Giallo</option>
+            <option value="green">Verde</option>
+            <option value="cyan">Verde acqua</option>
+            <option value="blue">Blu</option>
+            <option value="purple">Viola</option>
+            <option value="violet">Rosa</option>
+            <option value="black">Nero</option>
+            <option value="gray">Grigio</option>
+            <option value="white">Bianco</option>
+        </select>
+    </form>
+    </br>
+    </br>
+    <div id="stampa"></div>
+</body>
+</html>
